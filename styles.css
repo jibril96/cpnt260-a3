@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;;
+  }
+
+  .main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    margin: 20px;
+}
+
+.main-nav a {
+    background: rgb(58, 33, 33);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color:lightgrey;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.main-nav a:hover {
+    background: blue;
+    color: red;
+}
+
+  body {
+    background-color: rgb(0, 0, 0);
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: gray;
+  }
+  
+  figcaption,
+  p {
+    font-size: 25px;
+    color: gray;
+  }
+  
+  main {
+
+    min-width: 300px;
+    max-width: 1400px;
+    gap: 16px;
+  
+  }
+  
+  .Pexels {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  figure {
+    display: grid;
+    height: 100%;
+  }
+
+  .summer-portrait {
+    grid-row: 1;
+    grid-column:span 2;
+    display: grid;
+  }
+
+  .snow-portrait {
+    grid-column:span 2;
+    grid-row: 6;
+    display: grid;
+  }
+
+  img {
+    height: 100%;
+    Width: 100%;
+    object-fit: cover;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  figcaption {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
+    align-self: end;
+    color: grey;
+  }
+  
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 25px;
+    background-color: rgb(17, 17, 17);
+    color: rgb(87, 86, 86);
+  }
